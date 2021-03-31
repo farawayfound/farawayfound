@@ -1,8 +1,17 @@
 <img src="https://www.farawayfound.com/images/rmnp/rmnpano.jpg" width=1920>
 
-## Howdy! Welcome to my GitHub
+<h2 align="left"> Howdy! Welcome to my GitHub </h2>
 
+<p align="left"> 🔭 Aspiring Software Engineer </p>
+<p align="left"> 🏔️ Love gnarly mountain sports </p>
 
+<h3> Certifications </h3>
+
+<h3> Proficiencies </h3>
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farawayfound)
+
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a4b6d7b8-3c5a-4290-8a6f-a567423bca10" data-share-badge-host="https://www.youracclaim.com"></div><div type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></div>
 
 ![](https://komarev.com/ghpvc/?username=farawayfound&color=c38808)
 
