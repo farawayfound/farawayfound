@@ -1,5 +1,7 @@
+<img src="https://www.farawayfound.com/images/rmnp/rmnpano.jpg" width=1920>
 ### Hi there 👋
 
+![](https://komarev.com/ghpvc/?username=farawayfound&color=c38808)
 <!--
 **farawayfound/farawayfound** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
