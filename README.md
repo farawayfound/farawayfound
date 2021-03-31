@@ -2,8 +2,9 @@
 
 <h2 align="left"> Howdy! Welcome to my GitHub </h2>
 
-<p align="left"> 🔭 Aspiring Software Engineer </p>
-<p align="left"> 🏔️ Love gnarly mountain sports </p>
+<p> 🔭 Aspiring Software Engineer 💻</p>
+<p> 🏔️ who loves gnarly mountains sports 🤙</p>
+<p> 🐕 his dog, and his wife 🦸‍♀️  </p>
 
 <h3> Certifications </h3>
 
