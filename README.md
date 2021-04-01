@@ -8,15 +8,14 @@
 <p> 🐕 his dog, and his wife 🦸‍♀️  </p>
 
 <h3> Certifications </h3>
-
+<!--START_SECTION:badges-->
+<!--END_SECTION:badges-->
 <h3> Proficiencies </h3>
 
 <p> check out my <a href="https://farawayfound.com" target="_blank">website</a> I made with HTML/CSS/Javascript </p>
 <p> and my <a href="https://davidchui.work" target="_blank">resume</a> I made on wordpress </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farawayfound)
-
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a4b6d7b8-3c5a-4290-8a6f-a567423bca10" data-share-badge-host="https://www.youracclaim.com"></div><div type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></div>
 
 ![](https://komarev.com/ghpvc/?username=farawayfound&color=c38808)
 
