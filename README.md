@@ -11,8 +11,8 @@
 
 <h3> Proficiencies </h3>
 
-<p> check out my [website](https://farawayfound.com) I made with HTML/CSS/Javascript </p>
-<p> and my [resume](https://davidchui.work) I made on wordpress </p>
+<p> check out my <a href="https://farawayfound.com" target="_blank">website</a> I made with HTML/CSS/Javascript </p>
+<p> and my <a href="https://davidchui.work" target="_blank">resume</a> I made on wordpress </p>
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farawayfound)
 
