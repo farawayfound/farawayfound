@@ -8,10 +8,13 @@
 <p> 🐕 his dog, and his wife 🦸‍♀️  </p>
 
 <h3> Certifications </h3>
-
-<h4> Microsoft </h4>
-<p><a href="https://www.youracclaim.com/badges/a4b6d7b8-3c5a-4290-8a6f-a567423bca10/public_url">Azure Fundamentals</a></p>
-<p><a href="https://www.youracclaim.com/badges/6c9ab878-4474-478e-91e8-e6403382e2dc/public_url">Software Development Fundamentals</a></p>
+<table style="width:100%">
+  <tr>
+    <th>Microsoft</th>
+    <td><a href="https://www.youracclaim.com/badges/a4b6d7b8-3c5a-4290-8a6f-a567423bca10/public_url">Azure Fundamentals</a></td>
+    <td><a href="https://www.youracclaim.com/badges/6c9ab878-4474-478e-91e8-e6403382e2dc/public_url">Software Development Fundamentals</a></td>
+  </tr>
+</table>
 
 <h3> Proficiencies </h3>
 <table style="width:100%">
