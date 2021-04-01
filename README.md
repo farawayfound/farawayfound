@@ -3,7 +3,7 @@
 
 <h2 align="center"> Howdy! Welcome to my GitHub </h2>
 
-<h4 align="center"> 🔭 Aspiring Software Engineer 💻 🏔️ Mountains Sports Enthusiast 🤙 🐕 Dog Dad and Husband 🦸‍♀️  </h4>
+<h4 align="center"> 🔭 Aspiring Software Engineer 💻 🏔️ Mountains Sports Enthusiast 🤙 🦸‍♀️ Husband and Dog Dad 🐕  </h4>
 
 <h3> Certifications </h3>
 <table style="width:100%">
