@@ -32,7 +32,7 @@
     <td>Eclipse</td>
     <td>MSSQL Server</td>
     <td>Arduino IDE</td>
-    <td>Solidworks</td>
+    <td>Matlab</td>
     
   </tr>
 </table>
