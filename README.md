@@ -1,4 +1,4 @@
-<img src="https://www.farawayfound.com/images/rmnp/rmnpano.jpg" width=1920>
+<img src="Telluride.jpg" width=1920>
 <sup> Rocky Mountain National Park, October 2020. Dozens of elk gather among the alpine meadows as the sun casts dramatic rays through wildfire smoke.</sup>
 
 <h2 align="center"> Howdy! Welcome to my GitHub </h2>
