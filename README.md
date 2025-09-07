@@ -1,5 +1,5 @@
 <img src="Telluride.jpg" width=1920>
-<sup> Rocky Mountain National Park, October 2020. Dozens of elk gather among the alpine meadows as the sun casts dramatic rays through wildfire smoke.</sup>
+<sup> Telluride, Colorado. Via Ferrata on a nice summer afternoon, some of the best views of my life. </sup>
 
 <h2 align="center"> Howdy! Welcome to my GitHub </h2>
 
