@@ -1,55 +1,57 @@
-<img src="Telluride.jpg" width=1920>
-<sup> Telluride, Colorado. Via Ferrata on a nice summer afternoon, some of the best views of my life. </sup>
+<img src="Telluride.jpg" width="1920" alt="Telluride Via Ferrata">
+<sup>Telluride, Colorado — Via Ferrata on a summer afternoon. Some of the best views of my life.</sup>
 
-<h2 align="center"> Howdy! Welcome to my GitHub </h2>
+<h2 align="center">Howdy! Welcome to my GitHub 👋</h2>
+<h4 align="center">🛠️ Tenacious Software Engineer · ☁️ Azure/.NET · 🏔️ Mountain Sports Enthusiast · 🧑‍👩‍👦 Husband & Dad</h4>
 
-<h4 align="center"> 🔭 Imaginative Software Engineer 💻 🏔️ Mountain Sports Enthusiast 🤙 🦸‍♀️ Husband and Dad 👶 </h4>
+<p align="center">
+  <a href="https://resume.davidchui.work"><b>Self Hosted Resume</b></a> ·
+  <a href="mailto:david.chui@outlook.com">Email</a> ·
+  <a href="https://www.linkedin.com/in/david-chui-co">LinkedIn</a> ·
+  <a href="https://github.com/farawayfound">GitHub</a>
+</p>
 
-<h3> Certifications </h3>
-<table style="width:100%">
-  <tr>
-    <th>Microsoft</th>
-    <td><a href="https://www.youracclaim.com/badges/a4b6d7b8-3c5a-4290-8a6f-a567423bca10/public_url">Azure Fundamentals</a></td>
-    <td><a href="https://www.youracclaim.com/badges/6c9ab878-4474-478e-91e8-e6403382e2dc/public_url">Software Development Fundamentals</a></td>
-  </tr>
-</table>
+---
 
-<h3> Proficiencies </h3>
-<table style="width:100%">
-  <tr>
-    <th>Languages</th>
-    <td>C#</td>
-    <td>C++</td>
-    <td>Java</td>
-    <td>SQL</td>
-    <td>HTML/CSS</td>
-    <td>Javascript</td>
-  </tr>
-  <tr>
-    <th>Tools</th>
-    <td>Azure</td>
-    <td>Visual Studio</td>
-    <td>Eclipse</td>
-    <td>MSSQL Server</td>
-    <td>Arduino IDE</td>
-    <td>Matlab</td>
-    
-  </tr>
-</table>
-<p> Check out my <a href="https://farawayfound.com" target="_blank">website</a> I made with HTML/CSS/Javascript </p>
-<p> and my <a href="https://davidchui.work" target="_blank">resume</a> I made on Wordpress </p>
+## ✨ About Me
+I stabilize and scale mission-critical **C#/.NET** and **Azure** systems, then make them faster, safer, and easier to ship. I’ve led full-lifecycle delivery (diagnostics → fixes → releases), run incident response with blameless postmortems, and built pragmatic automation that saves teams hundreds of hours.
 
-<!--
-**farawayfound/farawayfound** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+- **Most recent role:** Technical Engineer II @ **HomeCare HomeBase (Hearst Health)**, 2022–2025  
+- **Prior:** Software Engineer @ **Convercent by OneTrust**, 2021–2022 · **US Air Force** (Structural Engineer), 2017–2020  
+- **Education:** **B.S. Finance & Information Systems** — University of Colorado Denver, **Completed Aug 2025**  
+- **What I’m hosting:** A self-hosted interactive resume on a **Raspberry Pi 3 B+** (Caddy + Cloudflare Tunnel) → **[resume.davidchui.work](https://resume.davidchui.work)**
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🧰 Tech I Use
+**Languages:** C#, Java, Python, T-SQL, PowerShell, HTML/CSS/JS  
+**Platforms & Tools:** .NET, Visual Studio, **Azure** (App Services, Functions, Container Apps/Registry, API Mgmt), Azure DevOps, Git, SSMS, **Kubernetes**, Rancher, Splunk, Postman, ServiceNow, **JAMS**  
+**Strengths:** Incident management, root-cause analysis, performance tuning, data operations, documentation & enablement
+
+---
+
+## 🏅 Certifications
+- **Microsoft Azure Developer Associate (AZ-204)** — 2024  
+- **Microsoft Azure Data Fundamentals (DP-900)** — 2023  
+- **Oracle OCP: Java SE 11 Developer** — 2021  
+- **Microsoft Azure Fundamentals (AZ-900)** — 2021  
+- **MTA: Software Development Fundamentals** — 2020
+
+> Verification links available on request or via my interactive resume.
+
+---
+
+## 📌 Highlights (from recent work)
+- **Reliability:** Sustained ~**99.9% uptime** for HA services; led incidents, wrote postmortems, and implemented preventive SLOs/alerts.  
+- **Diagnostics:** Crushed recurring exceptions (`NullReferenceException`, `InvalidOperationException`, ORM/SQL) using Splunk + Azure logs.  
+- **Data ops:** HIPAA-aligned DB work (T-SQL, migrations, backfills, merges); tuned heavy reporting procs.  
+- **Automation:** PowerShell + ServiceNow + SQL export pipeline that saved **hundreds of hours** per year.  
+- **Delivery:** 30+ billable projects shipped with clear runbooks and documentation that reduced future escalations.
+
+---
+
+## 🧪 Live Project: Self-Hosted Interactive Resume
+Built to be clean, fast, and reliable — and to show end-to-end ownership.
+
+- **Hardware:** Raspberry Pi 3 B+ (512 MB RAM) + microSD, cooled in a Pi mini-rack  
+- **Server:** **Caddy** (static hosting,
