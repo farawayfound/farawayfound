@@ -35,4 +35,6 @@ jobs:
           git add -A profile-3d-contrib
           git diff --staged --quiet && echo "no change" && exit 0
           git commit -m "chore: regenerate the 3D contribution calendar"
-          git push
+          # A scheduled run and a push-triggered run can finish together; the
+          # loser of that race must rebase rather than fail the workflow.
+          git push || (git pull --rebase && git push)
