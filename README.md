@@ -97,8 +97,6 @@ Roughly **22× the previous year** — mostly nights, weekends, and the occasion
 
 <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution calendar">
 
-<img src="metrics.habits.svg" alt="When and how I actually commit">
-
 </details>
 
 > Full disclosure: I also hold a **YOLO** achievement badge for merging a pull request without review. I'd love to say it was a deliberate statement about shipping velocity. It was not.

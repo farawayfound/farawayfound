@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: yoshi389111/github-profile-3d-contrib@v0.7.1
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           # A PAT with read:user sees more than the ephemeral job token does.
           GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
