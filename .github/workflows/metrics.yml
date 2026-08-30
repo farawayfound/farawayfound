@@ -1,0 +1,71 @@
+# lowlighter/metrics renders SVG cards and commits them into this repo.
+#
+# Both steps are gated on their secrets being present, because the `secrets`
+# context is NOT available in a job-level `if:` -- checking it in a step and
+# branching on that step's output is the only way to keep this workflow green
+# on a fork, or before the tokens are added.
+#
+# METRICS_TOKEN   classic PAT, scope: public_repo (add `repo` to count private
+#                 commits, and `read:org` for org membership)
+# WAKATIME_API_KEY  optional -- from wakatime.com/settings/api-key
+name: Metrics
+
+on:
+  schedule:
+    - cron: "37 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check which tokens are configured
+        id: gate
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: |
+          [ -n "$METRICS_TOKEN" ] && echo "metrics=true" >> "$GITHUB_OUTPUT" || echo "metrics=false" >> "$GITHUB_OUTPUT"
+          [ -n "$METRICS_TOKEN" ] && [ -n "$WAKATIME_API_KEY" ] \
+            && echo "waka=true" >> "$GITHUB_OUTPUT" || echo "waka=false" >> "$GITHUB_OUTPUT"
+
+      - name: Skip notice
+        if: steps.gate.outputs.metrics != 'true'
+        run: echo "METRICS_TOKEN is not set - skipping. Add it in Settings > Secrets > Actions."
+
+      - name: Habits - when and how I actually commit
+        if: steps.gate.outputs.metrics == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics.habits.svg
+          base: ""
+          config_timezone: America/Denver
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
+
+      - name: WakaTime - where the hours actually went
+        if: steps.gate.outputs.waka == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics.wakatime.svg
+          base: ""
+          config_timezone: America/Denver
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_API_KEY }}
+          plugin_wakatime_days: 30
+          plugin_wakatime_sections: time, projects, projects-graphs, languages, languages-graphs

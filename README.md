@@ -12,6 +12,17 @@
   <a href="https://github.com/farawayfound">GitHub</a>
 </p>
 
+<p align="center">
+  <a href="https://davidchui.work/fleet">
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="https://davidchui.work/api/fleet/badge.svg?theme=light">
+      <source media="(prefers-color-scheme: dark)" srcset="https://davidchui.work/api/fleet/badge.svg?theme=dark">
+      <img src="https://davidchui.work/api/fleet/badge.svg?theme=dark" width="540" alt="Live status of my self-hosted AI fleet">
+    </picture>
+  </a>
+</p>
+<p align="center"><sup><i>That card isn't a screenshot. It's rendered on request by the fleet it describes — if the bars are grey, my machines are asleep.</i> 😴</sup></p>
+
 ---
 
 ## ✨ About Me
@@ -30,22 +41,25 @@ Somewhere along the way, "I should self-host one model" became a **14-machine in
 ## 🛰️ What I've Been Building
 
 ### 🚗💨 [open-fleet](https://github.com/farawayfound/open-fleet) — *round up your spare machines into one private fleet of LLMs*
-The open-source release of the fleet that powers everything else here. Point it at whatever hardware you already own — a gaming desktop, a Mac laptop, a decade-old tower with no GPU at all — and it detects the OS, package manager, GPU backend and VRAM, provisions the right engine for that box, and puts them all behind **one OpenAI-compatible, keyed, metered API** with a dashboard.
+The open-source release of the fleet in that card. Point it at whatever hardware you already own — a gaming desktop, a Mac laptop, a decade-old tower with no GPU at all — and it detects the OS, package manager, GPU backend and VRAM, provisions the right engine for that box, and puts them all behind **one OpenAI-compatible, keyed, metered API**.
 
-The part I'm proudest of is **honest capacity**: context windows aren't a slider that lies. Each box computes the context it can *actually* launch a given model with, from the model's real GGUF geometry against that box's measured VRAM. So a request gets routed to a machine that can hold it — or gets told plainly that nothing can.
+The part I'm proudest of is **honest capacity**. Context windows aren't a slider that lies: each box computes the window it can *actually* launch a given model with, from the model's real GGUF geometry against that box's measured VRAM. So a request is routed to a machine that can hold it — or told plainly that nothing can.
 
 ```
-                      ┌────────────────────────────┐
-                      │    api.farawayfound.com    │   one URL.
-                      │      hermes  (the hub)     │   one key.
-                      └──────────────┬─────────────┘   fourteen machines.
-      ┌──────────┬───────────┬───────┴────┬──────────┬──────────┬───────────┐
-      ▼          ▼           ▼            ▼          ▼          ▼           ▼
-   ai-max    pipedream   flowmaster    mb-pro    zephyrus    macmini    ..& 8 more
-   96 GB      2×3090     96 GB carve   M1 Max     8 GB        M1 16 GB   (CPU boxes,
-   VRAM       48 GB      (Vulkan)      64 GB      VRAM        (Metal)     Pis, and a
-   llama.cpp  (CUDA)                   (Metal)    llama.cpp               dual-booter)
+                        ┌──────────────────────────────┐
+                        │     api.farawayfound.com     │     one URL.
+                        │   the hub — no GPU of its    │     one key.
+                        │       own, on purpose        │     fourteen machines.
+                        └───────────────┬──────────────┘
+      ┌───────────┬───────────┬─────────┴─┬───────────┬───────────┬────────────┐
+      ▼           ▼           ▼           ▼           ▼           ▼            ▼
+  Ryzen AI     2× RTX      Z13 395     M1 Max      RX 6700S    Apple M1    ..& 7 more
+  Max+ 395      3090      96 GB carve   64 GB       8 GB VRAM    16 GB      CPU-only
+  96 GB VRAM  48 GB VRAM   (Vulkan)    (Metal)      (Vulkan)     (Metal)    boxes, Pis,
+   llama.cpp    (CUDA)                                                    a dual-booter
 ```
+
+<sub>Machines are listed by silicon, not by hostname — the public API anonymizes them to <code>Box 1…Box 13</code>, and this diagram keeps that promise.</sub>
 
 ### 🎯 career-ops — *an AI job-search pipeline that runs on my own hardware*
 Evaluate a posting, tailor the CV, render the ATS-safe PDF, draft the cover letter, track every application, and let a local-inference autopilot package the whole thing for review. Zero-token portal scanning across Greenhouse / Ashby / Lever / Workday, a browser companion that fills forms in your own browser, funnel analytics, and a **7,900+ check** test suite keeping me honest.
@@ -53,15 +67,16 @@ Evaluate a posting, tailor the CV, render the ATS-safe PDF, draft the cover lett
 One rule, enforced in the codebase rather than in the docs: **it never submits anything.** It evaluates and recommends; a human decides and clicks. Public fork → [careerclaw](https://github.com/farawayfound/careerclaw).
 
 ### 🥔 ChunkyLink — *retrieval without the vector database*
-A non-vectorized inference framework: files are indexed into cross-referenced JSON chunks so structured data can be searched *directly* for model context, instead of hoping an embedding lands nearby. It serves [davidchui.work](https://davidchui.work) — the site, the admin dashboard, and the résumé you're one click from.
+A non-vectorized inference framework: files are indexed into cross-referenced JSON chunks so structured data can be searched *directly* for model context, instead of hoping an embedding lands nearby. It serves [davidchui.work](https://davidchui.work) — the site, the admin dashboard, that live fleet card, and the résumé you're one click from.
 
 ---
 
 ## 📈 2026, by the numbers
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=farawayfound&theme=dark&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="Contribution streak" />
-</p>
+<!-- SHIPPED:START -->
+<!-- Regenerated nightly by .github/workflows/shipped.yml — do not edit by hand. -->
+**Shipped this week —** 197 contributions: [open-fleet](https://github.com/farawayfound/open-fleet) ×8 · [farawayfound](https://github.com/farawayfound/farawayfound) ×1 · **188** in private repos.
+<!-- SHIPPED:END -->
 
 |  | 2025 | 2026 *(through August)* |
 |---|---:|---:|
@@ -69,6 +84,22 @@ A non-vectorized inference framework: files are indexed into cross-referenced JS
 | **Repos touched** | 2 | **15** |
 
 Roughly **22× the previous year** — mostly nights, weekends, and the occasional "I'll just fix one small thing" at 1am. 🌙
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farawayfound/farawayfound/output/snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/farawayfound/farawayfound/output/snake-light.svg">
+  <img alt="A snake eating my contribution graph" src="https://raw.githubusercontent.com/farawayfound/farawayfound/output/snake-dark.svg">
+</picture>
+
+<details>
+<summary>📊 <b>More graphs than any reasonable person needs</b></summary>
+<br>
+
+<img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution calendar">
+
+<img src="metrics.habits.svg" alt="When and how I actually commit">
+
+</details>
 
 > Full disclosure: I also hold a **YOLO** achievement badge for merging a pull request without review. I'd love to say it was a deliberate statement about shipping velocity. It was not.
 

@@ -1,0 +1,59 @@
+# Rewrites the "Shipped this week" line in README.md from real commit data.
+#
+# This is the prose answer to the same problem the contribution graph has:
+# most of the work is in private repos. The script counts those but never
+# names them -- see the header comment in scripts/shipped.mjs.
+#
+# PROFILE_TOKEN  classic PAT, scope: repo (needed to see private commit
+#                counts at all; the job's own GITHUB_TOKEN cannot).
+name: Shipped this week
+
+on:
+  schedule:
+    - cron: "7 13 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: shipped
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check the token is configured
+        id: gate
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          [ -n "$PROFILE_TOKEN" ] && echo "ready=true" >> "$GITHUB_OUTPUT" || echo "ready=false" >> "$GITHUB_OUTPUT"
+
+      - name: Skip notice
+        if: steps.gate.outputs.ready != 'true'
+        run: echo "PROFILE_TOKEN is not set - skipping. Add it in Settings > Secrets > Actions."
+
+      - name: Regenerate the block
+        if: steps.gate.outputs.ready == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: node scripts/shipped.mjs
+
+      - name: Commit if it changed
+        if: steps.gate.outputs.ready == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet && echo "no change" && exit 0
+          git commit -m "chore: refresh the shipped-this-week line"
+          git push
