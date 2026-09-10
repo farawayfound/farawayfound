@@ -28,7 +28,7 @@
 ## ✨ About Me
 I stabilize and scale mission-critical systems, then make them faster, safer, and easier to ship. For four years that meant **C#/.NET + Azure** healthcare platforms at 99.9% uptime. These days it means **AI systems that actually run in production** — agentic triage assistants, local LLM runtimes, MCP servers, and the CI/CD underneath them.
 
-Somewhere along the way, "I should self-host one model" became a **14-machine inference fleet** in my house. I regret nothing. 🔥
+Somewhere along the way, "I should self-host one model" became a **16-machine inference fleet** in my house. I regret nothing. 🔥
 
 - **Current role:** DevOps Engineer IV @ **Spectrum (Charter Communications)**, Oct 2025 – Present  
   <sub>Video Platform Operations — building deployable AI tools, agentic triage, and the infrastructure under them.</sub>
