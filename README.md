@@ -75,15 +75,6 @@ A non-vectorized inference framework: files are indexed into cross-referenced JS
 
 <!-- SHIPPED:START -->
 <!-- Regenerated nightly by .github/workflows/shipped.yml — do not edit by hand. -->
-**Shipped this week —** 197 contributions: [open-fleet](https://github.com/farawayfound/open-fleet) ×8 · [farawayfound](https://github.com/farawayfound/farawayfound) ×1 · **188** in private repos.
-<!-- SHIPPED:END -->
-
-|  | 2025 | 2026 *(through August)* |
-|---|---:|---:|
-| **Contributions** | 36 | **807** |
-| **Repos touched** | 2 | **15** |
-
-Roughly **22× the previous year** — mostly nights, weekends, and the occasional "I'll just fix one small thing" at 1am. 🌙
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/farawayfound/farawayfound/output/snake-dark.svg">
@@ -98,8 +89,6 @@ Roughly **22× the previous year** — mostly nights, weekends, and the occasion
 <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution calendar">
 
 </details>
-
-> Full disclosure: I also hold a **YOLO** achievement badge for merging a pull request without review. I'd love to say it was a deliberate statement about shipping velocity. It was not.
 
 ---
 
