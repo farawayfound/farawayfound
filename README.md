@@ -102,6 +102,7 @@ A non-vectorized inference framework: files are indexed into cross-referenced JS
 ---
 
 ## 🏅 Certifications & Schooling
+- **B.S. Information Systems w/ focus in Finance** — University of Colorado, 2025
 - **Microsoft Azure Developer Associate (AZ-204)** — 2024  
 - **Microsoft Azure Data Fundamentals (DP-900)** — 2023  
 - **Oracle OCP: Java SE 11 Developer** — 2021  
